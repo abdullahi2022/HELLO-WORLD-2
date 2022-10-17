@@ -1,2 +1,9 @@
-# HELLO-WORLD-2
-Cs10
+# Hello World
+CS10
+
+---
+
+Lesson Summary
+-
+
+---
