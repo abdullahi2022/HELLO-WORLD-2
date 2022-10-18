@@ -1,10 +1,15 @@
-println("Hello World");
+println("Hello World, I am Abdullahi");
+
+//
+//Declaring Display Geometry: landscape, square, portrait
+size(700, 400); //Able to deploy with fullScreen();
+//
+//Concatenation: , or + (i.e space)
+println("\t\t\tWidth ="+width, "\tHeight="+ height);
+println("Display Monitor:"+ "\twidth:"+ displayWidth, "\tHeight:"+ displayHeight);
 //
 //Fitting CANVAS into Monitor Display
-//
-//Declairing Display Gemotery: landscape, square, portrait
-size(); //Able to deploy with fullScreen();
-//
+if (  width > displayWidth ) appWidth = 0; //CANVAS-width will not fit
 //Outputting instructions to user when errors with above
 //Bru, turn your phum
 //
