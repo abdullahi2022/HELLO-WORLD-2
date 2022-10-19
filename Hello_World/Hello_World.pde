@@ -28,6 +28,12 @@ void setup() {
 } //End setup
 //
 void draw() {
+  ellipse(350, 200, 300, 300); 
+    ellipse(100, 100, 100, 30);
+  //a  (float)  x-coordinate of the ellipse
+//b  (float)  y-coordinate of the ellipse
+//c  (float)  width of the ellipse by default
+//d  (float)  height of the ellipse by default
 } //End draw
 //
 void keyPressed() {
