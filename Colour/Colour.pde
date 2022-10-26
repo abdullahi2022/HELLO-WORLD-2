@@ -1,6 +1,9 @@
 //Global Variables
 int appWidth, appHeight;
 float centerX, centerY, xStart, yStart, widthRect, heightRect;
+float thin, normal, thick;
+color blackDayLight=#000000; //Hexidecimal
+
 //
 void setup() {
   //Declaring Display Geometry: landscape, square, portrait
@@ -41,7 +44,10 @@ void draw() {
   background(100); //Gray Scale (0-255) & Blue Issue for night mode
   //
   //Casting Reminder
-  background( color( 68,85, 222 ) ); // Colour without blue
+  background( color( random(0 , 255), random(0 , 255), random(0 , 255) ) ); // Colour without blue
+  //
+  background( blackDayLight );
+  strokeWeight
   rect(xStart, yStart, widthRect, heightRect);
 } //End draw
 //
