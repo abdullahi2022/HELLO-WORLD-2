@@ -38,7 +38,10 @@ void setup() {
 void draw() {
   // New Background Function "covers" old gray scale background()
   // Night Mode means background cannot have blue // change randome for night mode, hard code "0"
-  background(0); //Gray Scale & Blue Issue for night mode
+  background(100); //Gray Scale (0-255) & Blue Issue for night mode
+  //
+  //Casting Reminder
+  background( color( 68,85, 222 ) ); // Colour without blue
   rect(xStart, yStart, widthRect, heightRect);
 } //End draw
 //
