@@ -1,10 +1,9 @@
 //Global Variables
 int appWidth, appHeight;
 float centerX, centerY, xStart, yStart, widthRect, heightRect;
-color blackNightMode=#000000, yellow=#F8FC64, purple=#FA00F6, white=#FFFFFF; 
-color yellowNightMode=#F8FC00, purpleNightMode=#FA0096;//Hexidecimal
+color blackNightMode=#000000, yellow=#F8FC64, purple=#FA00F6, white=#FFFFFF; //Hexidecimal
 float thin, normal, thick;
-Boolean grayScale=false, backgroundColour=false, nightMode=false;
+Boolean grayScale=false, backgroundColour=false;
 //
 void setup() {
   //Declaring Display Geometry: landscape, square, portrait
@@ -50,17 +49,10 @@ void draw() {
   //Casting Reminder
   if ( backgroundColour == true ) background( color( random(0 , 255), random(0 , 255), random(0 , 255) ) ); // Colour without blue
   //
+  background( blackNightMode );
   strokeWeight( thick );
-  if ( nightMode == true)
-  {
-    background( blackNightMode );
-    stroke( yellowNightMode ); 
-    fill( purpleNightMode ); 
-  } else
-  {
-    stroke( yellow ); 
-    fill( purple ); 
-  }
+  stroke( yellow ); 
+  fill( purple ); 
   rect(xStart, yStart, widthRect, heightRect);
   fill( white ); //default reset
   stroke( blackNightMode ); //default reset
@@ -68,10 +60,6 @@ void draw() {
 } //End draw
 //
 void keyPressed() {
-  grayScale = false;
-  backgroundColour = false;
-  if ( key == 'G' || key == 'g' ) grayScale = true;
-  if ( key == 'B' || key == 'b' ) backgroundColour = true;
 } //End keyPressed
 //
 void mousePressed() {
