@@ -51,7 +51,7 @@ void draw() {
   if ( backgroundColour == true ) background( color( random(0 , 255), random(0 , 255), random(0 , 255) ) ); // Colour without blue
   //
   strokeWeight( thick );
-  if ( nightMode == true)
+  if ( nightMode == true )
   {
     background( blackNightMode );
     stroke( yellowNightMode ); 
@@ -75,6 +75,8 @@ void keyPressed() {
 } //End keyPressed
 //
 void mousePressed() {
+  if ( mouseButton == LEFT ) nightMode = true;
+  if ( mouseButton == RIGHT ) nightMode = false;
 } //End mousePressed
 //
 // End Main Program
