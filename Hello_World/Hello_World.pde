@@ -1,5 +1,5 @@
 //TicTacToe Easy mode. 
-//there is a higher chance of the Human player winning.
+//there is a higher chance of the Human player winning than ai.
 boolean crossTurn, computerTurn, mouseReleased, tied, computerTurnTimer, gameIsLive ;
 int howmany, time, finalTime, boxSize, fps = 12; 
 float c, radius; 
